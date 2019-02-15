@@ -11,7 +11,7 @@ def initialize ( id:, name:, type:, db:nil, hp:60)
 end
 
 
-def self.save(name, type, db,hp=60)
+def self.save(name, type, hp=60,db)
 db.execute("INSERT INTO Pokemon  (name, type,hp) VALUES (?, ?,?)",name, type,hp)
 end
 
