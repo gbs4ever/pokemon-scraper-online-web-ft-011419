@@ -18,7 +18,7 @@ end
 
 def self.find(id,db)
 file = db.execute("SELECT * FROM pokemon WHERE id= ?" ,id).flatten
-Pokemon.new(id:file[0], name:file[1], type:file[2], hp:file[3])
+Pokemon.new(id:file[0], name:file[1], type:file[2])
 end
 
 
