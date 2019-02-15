@@ -7,7 +7,7 @@ def initialize ( id:, name:, type:, db:nil, hp:)
 @name= name
 @type =type
 @db =db
-@hp = hp
+@hp =hp
 end
 
 
