@@ -12,7 +12,7 @@ end
 
 
 def self.save(name, type, hp=60,db)
-db.execute("INSERT INTO Pokemon  (name, type,hp) VALUES (?, ?,?)",name, type,hp)
+db.execute("INSERT INTO Pokemon  (name, type,hp) VALUES (?, ?)",name, type)
 end
 
 
